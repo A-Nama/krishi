@@ -1,6 +1,0 @@
-requests 
-beautifulsoup4 
-readability-lxml 
-pandas
-google-genai 
-python-dotenv
