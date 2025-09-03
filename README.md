@@ -7,7 +7,7 @@ This repository contains the official dataset and baseline model implementations
 Our work aims to address the scarcity of NLP resources for the agricultural domain in low-resource Indian languages, starting with Malayalam.
 
 ---
-## ## About the Dataset 
+## About the Dataset 
 
 The KRISHI dataset is a collection of agricultural texts in Malayalam, expertly annotated into five distinct categories. It is designed to serve as a benchmark for developing and evaluating NLP models for agricultural applications in the region.
 
@@ -18,7 +18,7 @@ The five categories are:
 * `ENVIRONMENTAL_FACTORS`
 * `LIVESTOCK`
 
-### ### Access the Dataset
+### Access the Dataset
 
 The dataset is a living resource and will be updated periodically with new data. You can access the latest version via the Google Sheet linked below.
 
@@ -27,7 +27,7 @@ The dataset is a living resource and will be updated periodically with new data.
 For a static version used in our paper, please see the `/data` directory in this repository.
 
 ---
-## ## Baseline Models & Results 
+## Baseline Models & Results 
 
 We established baseline performance on the KRISHI dataset using two prominent transformer models. Our results highlight the challenge of class imbalance and the advantage of language-specific pre-training.
 
