@@ -54,7 +54,6 @@ def save_to_csv(data_list, filename):
     except KeyError:
         print("   CRITICAL ERROR: Could not create CSV. The 'title' or 'malayalam_content' key was likely missing in the data from Gemini.")
 
-# --- GEMINI AI FUNCTIONS ------------------------------------------------------
 
 def get_topics_from_gemini(text_content, model):
     print(" Splitting text into topics using Gemini...")
@@ -88,7 +87,6 @@ def translate_with_gemini(text_to_translate, model):
         print(f"       ERROR during Gemini translation: {e}")
         return "Gemini Translation Error"
 
-# --- MAIN EXECUTION SCRIPT --------------------------------------------------
 
 def main():
     """Main function to run the entire data processing pipeline."""
@@ -148,3 +146,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
