@@ -24,18 +24,20 @@ The dataset is a living resource and will be updated periodically with new data.
 
 **➡️ [Access the KRISHI Dataset (Google Sheet)](https://docs.google.com/spreadsheets/d/1hTUw3fPDvqC2f2LYX9bDVuxKx_R1F_kRkbk__QsMvEg/edit?usp=sharing)**
 
-For a static version used in our paper, please see the `/data` directory in this repository.
 
 ---
-## Baseline Models & Results 
+## Baseline Models & Results
 
-We established baseline performance on the KRISHI dataset using two prominent transformer models. Our results highlight the challenge of class imbalance and the advantage of language-specific pre-training.
+We established baseline performance on the KRISHI dataset using three standard machine learning algorithms. Our results highlight that while class imbalance poses a challenge for probabilistic models, margin-based approaches demonstrated significant robustness.
 
 | Model | Accuracy | Weighted F1-Score |
 | :--- | :---: | :---: |
-| `ai4bharat/indic-bert` | **53%** | **0.45** |
-| `bert-base-multilingual-cased` | 47% | 0.30 |
+| **SVM (LinearSVC)** | **69%** | **0.68** |
+| Logistic Regression | 55% | 0.47 |
+| Naive Bayes | 45% | 0.30 |
 
-The superior performance of `indic-bert` demonstrates the value of using language-specific models for this task.
+**Key Insights:**
+* **LinearSVC** achieved the strongest performance, effectively handling minority classes like `DISEASES` (F1: 0.91) and `LIVESTOCK` (F1: 0.80) where other models struggled.
+* **Logistic Regression** and **Naive Bayes** showed a strong bias towards the majority `CROPS` class, resulting in significantly lower performance on underrepresented categories.
 
 ---
